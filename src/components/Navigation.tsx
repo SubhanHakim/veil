@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const navItems = [
@@ -45,7 +45,7 @@ const Navigation = () => {
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
-    const menuVariants = {
+    const menuVariants: Variants = {
         closed: {
             opacity: 0,
             y: "-100%",
@@ -58,7 +58,7 @@ const Navigation = () => {
         }
     };
 
-    const linkVariants = {
+    const linkVariants: Variants = {
         closed: { y: 20, opacity: 0 },
         open: (i: number) => ({
             y: 0,
