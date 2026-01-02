@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+@theme {
+  --color-void: #030305;
+  --color-sub-void: #0A0A12;
+  --color-phantom: #1c1c2e;
+  --color-term-cyan: #0891b2;
+  --color-haze-violet: #4c1d95;
+  --color-mist: rgba(255, 255, 255, 0.05);
+
+  /* Text Colors */
+  --color-text-main: #e2e8f0; /* slate-200 */
+  --color-text-muted: #94a3b8; /* slate-400 */
+
+  --font-sans: 'Inter', sans-serif;
+
+  --tracking-cinematic: 0.25em;
+  --tracking-widest: 0.15em;
+
+  --animate-breathe: breathe 8s ease-in-out infinite;
+  --animate-drift: drift 20s linear infinite;
+
+  @keyframes breathe {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+  }
+  @keyframes drift {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+}
+
+/* Custom Utilities */
+@utility cinematic-text {
+  @apply tracking-cinematic uppercase text-sm md:text-base font-light text-slate-400;
+}
+
+@utility layout-grid {
+    display: grid; 
+    grid-template-columns: 1fr min(1200px, 90%) 1fr;
+}
+
+@utility layout-content {
+    grid-column: 2;
+}
+
+/* Base Styles */
+body {
+  @apply bg-void text-text-main font-sans antialiased overflow-x-hidden selection:bg-haze-violet selection:text-white;
+  cursor: crosshair; 
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-void;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-phantom;
+}
