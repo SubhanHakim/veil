@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="flex flex-col gap-2 items-center">
                 <div className="w-px h-8 bg-gradient-to-b from-text-muted to-transparent opacity-20 mb-4"></div>
                 <div className="text-[9px] tracking-[0.3em] text-text-muted opacity-30 font-mono">
-                    DESIGNED BY MOONCHAD // SYS.VER.2.0.4 // © 2026
+                    DESIGNED BY VEIL // SYS.VER.2.0.4 // © 2026
                 </div>
             </div>
 
