@@ -7,10 +7,10 @@ import img3 from '../assets/gallery/gallery3.png';
 import img4 from '../assets/gallery/gallery4.png';
 
 const visualData = [
-    { id: 1, src: img1, label: "TOPOGRAPHY", sub: "DATA_001", desc: "Mapping the unobservable." },
-    { id: 2, src: img2, label: "PRESENCE", sub: "DATA_002", desc: "Ghost interaction signature." },
-    { id: 3, src: img3, label: "MONOLITH", sub: "DATA_003", desc: "Absolute static structure." },
-    { id: 4, src: img4, label: "CYBERNETICS", sub: "DATA_004", desc: "Machine perception link." },
+    { id: 1, src: img1, label: "ECHOES", sub: "DATA_001", desc: "Digital remnants of a forgotten era." },
+    { id: 2, src: img2, label: "CONSTRUCT", sub: "DATA_002", desc: "A framework suspended in void." },
+    { id: 3, src: img3, label: "SIGNAL", sub: "DATA_003", desc: "Transmission received from the deep web." },
+    { id: 4, src: img4, label: "SYNTHESIS", sub: "DATA_004", desc: "Merging organic thought with machine logic." },
 ];
 
 const Gallery = () => {
