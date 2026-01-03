@@ -71,7 +71,7 @@ const Hero = () => {
                     transition={{ delay: 2.2, duration: 1 }}
                     className="mt-12 flex gap-4 md:gap-6 z-30"
                 >
-                    <SocialButton href="https://bonk.fun/token/8mkryty7ucTeARVX2eaBYYgEF6NUvhxDSTSyq34Ebonk" icon={<img src={dexIcon} alt="Dex" className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity" />} label="bonk" />
+                    <SocialButton href="#" icon={<img src={dexIcon} alt="Dex" className="w-4 h-4 opacity-70 group-hover:opacity-100 transition-opacity" />} label="bonk" />
                     <SocialButton href="https://x.com/veil_line" icon={<XIcon />} label="X" />
                 </motion.div>
             </motion.div>
